@@ -11,6 +11,9 @@ public class DuplicatesInArray_442
 		{ 4, 3, 2, 7, 8, 2, 3, 1 } ) );
 	}
 
+	/*
+	 * The nums will hold values in range 0..nums.length
+	 */
 	public static List<Integer> findDuplicates( int[] nums )
 	{
 		List<Integer> list = new ArrayList<>();
