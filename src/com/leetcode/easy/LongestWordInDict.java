@@ -1,22 +1,21 @@
 package com.leetcode.easy;
 
-import java.util.HashSet;
+import java.util.Arrays;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class LongestWordInDict
 {
 	public static void main( String[] args )
 	{
 		String[] arr =
-		{ "w", "a", "wo", "worl", "world", "wor", "swaroop" };
+		{ "worl", "w", "a", "wo", "world", "wor", "swaroop" };
 		System.out.println( longestWord( arr ) );
 	}
 
 	public static String longestWord( String[] words )
 	{
-		Set<String> wordset = new HashSet<>();
-		for ( String word : words )
-			wordset.add( word );
+		Set<String> wordset = Arrays.stream( words ).collect( Collectors.toSet() );
 
 		String ans = "";
 		for ( String word : words )

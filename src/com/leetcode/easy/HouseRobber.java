@@ -7,32 +7,32 @@ public class HouseRobber
 {
 	public static void main( String[] args )
 	{
-		rob( new int[]
-		{ 1, 2, 3, 1 } );
+		System.out.println( rob( new int[]
+		{ 1, 2, 3, 1 } ) );
 	}
 
 	public static int rob( int[] houseVal )
 	{
-		int n = houseVal.length;
+		int N = houseVal.length;
 
-		if ( n == 0 )
+		if ( N == 0 )
 			return 0;
 
-		if ( n == 1 )
+		if ( N == 1 )
 			return houseVal[0];
 
-		if ( n == 2 )
+		if ( N == 2 )
 			return Math.max( houseVal[0], houseVal[1] );
 
 		// dp[i] represent the maximum value stolen so far after reaching house i. 
-		int[] dp = new int[n];
+		int[] dp = new int[N];
 		dp[0] = houseVal[0];
 		dp[1] = Math.max( houseVal[0], houseVal[1] );
 
 		// Fill remaining positions 
-		for ( int i = 2; i < n; i++ )
+		for ( int i = 2; i < N; i++ )
 			dp[i] = Math.max( houseVal[i] + dp[i - 2], dp[i - 1] );
 
-		return dp[n - 1];
+		return dp[N - 1];
 	}
 }

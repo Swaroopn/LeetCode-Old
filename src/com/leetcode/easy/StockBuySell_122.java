@@ -5,7 +5,7 @@ public class StockBuySell_122
 	public static void main( String[] args )
 	{
 		System.out.println( maxProfit( new int[]
-		{ 7, 1, 5, 3, 6, 4 } ) );
+		{ 2, 1, 5, 3, 6, 4 } ) );
 	}
 
 	public static int maxProfit( int[] prices )

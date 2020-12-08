@@ -17,9 +17,9 @@ public class MergeSortedArray
 
 	public static void merge( int[] arr1, int m, int[] arr2, int n )
 	{
-		int index = m + n - 1;
 		int first = m - 1;
 		int second = n - 1;
+		int index = m + n - 1;
 		while ( first >= 0 || second >= 0 )
 		{
 			int num1 = first >= 0 ? arr1[first] : Integer.MIN_VALUE;

@@ -28,7 +28,7 @@ public class GroupAnagrams_49
 			Arrays.parallelSort( ca );
 			String key = String.valueOf( ca );
 
-			ans.computeIfAbsent( key, ( k -> new ArrayList<>() ) );
+			ans.putIfAbsent( key, new ArrayList<>() );
 			ans.get( key ).add( str );
 		}
 

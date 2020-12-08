@@ -2,14 +2,14 @@ package com.leetcode.easy;
 
 public class RemoveDuplicatesFromLinkedList_83
 {
-	public ListNode deleteDuplicates( ListNode head )
+	public Node deleteDuplicates( Node head )
 	{
 		if ( head == null )
 			return null;
 
 		int prevVal = head.val;
-		ListNode prev = head;
-		ListNode curr = head.next;
+		Node prev = head;
+		Node curr = head.next;
 		while ( curr != null )
 		{
 			if ( curr.val == prevVal )

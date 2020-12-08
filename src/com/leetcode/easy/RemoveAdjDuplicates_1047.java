@@ -22,9 +22,7 @@ public class RemoveAdjDuplicates_1047
 
 		StringBuilder result = new StringBuilder();
 		while ( !stack.isEmpty() )
-		{
 			result.append( stack.pop() );
-		}
 
 		return result.reverse().toString();
 	}

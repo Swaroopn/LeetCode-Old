@@ -2,6 +2,9 @@ package com.leetcode.easy;
 
 import java.util.Stack;
 
+/*
+ * Important
+ */
 public class ValidParentheses
 {
 	public static void main( String[] args )
@@ -13,7 +16,6 @@ public class ValidParentheses
 	{
 		char inChar;
 		Stack<Character> stack = new Stack<>();
-
 		for ( int i = 0; i < expr.length(); i++ )
 		{
 			inChar = expr.charAt( i );
@@ -36,9 +38,6 @@ public class ValidParentheses
 			}
 		}
 
-		if ( !stack.isEmpty() )
-			return false;
-
-		return true;
+		return stack.isEmpty();
 	}
 }

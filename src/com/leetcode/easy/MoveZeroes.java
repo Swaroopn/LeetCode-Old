@@ -1,26 +1,29 @@
 package com.leetcode.easy;
 
+import java.util.Arrays;
+
 public class MoveZeroes
 {
 	public static void main( String[] args )
 	{
-		moveZeroes( new int[]
-		{ 0, 1, 0, 3, 12 } );
+		int[] arr = new int[]
+		{ 1, 2, 0, 3, 10, 0 };
+		moveZeroes( arr );
+		System.out.println( Arrays.toString( arr ) );
 	}
 
 	public static void moveZeroes( int[] nums )
 	{
-		int ind = 0;
-		for ( int i = 0; i < nums.length; i++ )
+		int zeroPtr = 0;
+		for ( int nonZeroPtr = 0; nonZeroPtr < nums.length; nonZeroPtr++ )
 		{
-			if ( nums[i] != 0 )
+			if ( nums[nonZeroPtr] != 0 )
 			{
-				nums[ind] = nums[i];
-				if ( i != ind )
-				{
-					nums[i] = 0;
-				}
-				ind++;
+				int temp = nums[nonZeroPtr];
+				nums[nonZeroPtr] = nums[zeroPtr];
+				nums[zeroPtr] = temp;
+
+				zeroPtr++;
 			}
 		}
 	}

@@ -12,18 +12,18 @@ public class ValidParenthesis_921
 
 	public static int minAddToMakeValid( String S )
 	{
-		int count = 0;
+		int openCount = 0;
 		int closeCount = 0;
 		for ( char ch : S.toCharArray() )
 		{
 			if ( ch == '(' )
-				count++;
-			else if ( ch == ')' && count == 0 )
+				openCount++;
+			else if ( ch == ')' && openCount == 0 )
 				closeCount++;
 			else
-				count--;
+				openCount--;
 		}
 
-		return Math.abs( count + closeCount );
+		return Math.abs( openCount + closeCount );
 	}
 }

@@ -9,12 +9,16 @@ public class Anagrams_1347
 
 	public static int minSteps( String s, String t )
 	{
+		if ( s.length() != t.length() )
+			return -1;
+
 		int count = 0;
 		int[] alpha = new int[26];
 		for ( char ch : s.toCharArray() )
 		{
 			alpha[ch - 'a']++;
 		}
+		
 		for ( char ch : t.toCharArray() )
 		{
 			--alpha[ch - 'a'];

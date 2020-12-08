@@ -15,8 +15,10 @@ public class ValidAnagram
 		{
 			char[] sAsChar = s.toCharArray();
 			char[] tAsChar = t.toCharArray();
+			
 			Arrays.sort( sAsChar );
 			Arrays.sort( tAsChar );
+			
 			return Arrays.equals( sAsChar, tAsChar );
 		}
 

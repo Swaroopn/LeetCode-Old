@@ -5,7 +5,7 @@ public class RemoveDuplicatesFromSortedArray
 	public static void main( String[] args )
 	{
 		System.out.println( removeDuplicates( new int[]
-		{ 1, 1, 2 } ) );
+		{ 1, 1, 2, 3, 4, 4, 5 } ) );
 	}
 
 	public static int removeDuplicates( int[] nums )
@@ -27,12 +27,12 @@ public class RemoveDuplicatesFromSortedArray
 		for ( int j = 1; j < nums.length; j++ )
 		{
 			if ( nums[i] != nums[j] )
-			{
-				nums[i + 1] = nums[j];
-				i++;
-			}
+				nums[++i] = nums[j];
 		}
 
+		for ( int j = 0; j <= i; j++ )
+			System.out.print( nums[j] );
+		System.out.println();
 		return i + 1;
 	}
 }

@@ -5,7 +5,7 @@ public class ExcelSheetColumnTitle
 	public static void main( String[] args )
 	{
 		System.out.println( convertToTitle( 30 ) );
-		System.out.println( titleToNumber( "AD" ) );
+		System.out.println( titleToNumber( "AAA" ) );
 	}
 
 	public static String convertToTitle( int columnNumber )
@@ -14,7 +14,6 @@ public class ExcelSheetColumnTitle
 		while ( columnNumber > 0 )
 		{
 			int rem = columnNumber % 26;
-
 			if ( rem == 0 )
 			{
 				sbr.append( "Z" );

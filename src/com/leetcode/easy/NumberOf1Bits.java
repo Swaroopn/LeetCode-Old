@@ -10,8 +10,9 @@ public class NumberOf1Bits
 	public static int hammingWeight( int n )
 	{
 		int bits = 0;
+		
 		int mask = 1;
-		for ( int i = 0; i < 32; i++ )
+		for ( int i = 0; i < Integer.SIZE; i++ )
 		{
 			if ( ( n & mask ) != 0 )
 				bits++;

@@ -3,11 +3,14 @@ package com.leetcode.medium;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+ * Important
+ */
 public class LongestSubstrWithoutRepeatingChars
 {
 	public static void main( String[] args )
 	{
-		System.out.println( lengthOfLongestSubstring( "abbc" ) );
+		System.out.println( lengthOfLongestSubstring( "abcddefhijkk" ) );
 	}
 
 	public static int lengthOfLongestSubstring( String s )

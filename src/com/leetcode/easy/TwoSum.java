@@ -3,6 +3,9 @@ package com.leetcode.easy;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * Important
+ */
 public class TwoSum
 {
 	public static void main( String[] args )

@@ -8,7 +8,7 @@ public class ReverseVowelsOfAString
 
 	public static void main( String[] args )
 	{
-		System.out.println( reverseVowels( "aA" ) );
+		System.out.println( reverseVowels( "aebcdiz" ) );
 	}
 
 	public static String reverseVowels( String s )

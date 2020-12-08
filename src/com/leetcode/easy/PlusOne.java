@@ -7,7 +7,7 @@ public class PlusOne
 	public static void main( String[] args )
 	{
 		int[] num =
-		{ 1, 2, 9 };
+		{ 9, 9, 9 };
 		System.out.println( Arrays.toString( plusOne( num ) ) );
 	}
 

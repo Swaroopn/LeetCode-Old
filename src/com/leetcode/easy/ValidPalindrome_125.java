@@ -1,6 +1,6 @@
 package com.leetcode.easy;
 
-public class ValidPalindrome
+public class ValidPalindrome_125
 {
 	public static void main( String[] args )
 	{
