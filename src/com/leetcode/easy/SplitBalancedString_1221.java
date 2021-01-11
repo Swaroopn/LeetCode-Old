@@ -11,7 +11,12 @@ public class SplitBalancedString_1221
 		{
 			if ( 'R' == ch )
 				rCount++;
+<<<<<<< HEAD
 			else if ( 'L' == ch )
+=======
+
+			if ( 'L' == ch )
+>>>>>>> 92b4f99a37690f59e5bc5d2fa42b104e3318f4bd
 				lCount++;
 
 			if ( rCount == lCount )

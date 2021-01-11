@@ -22,7 +22,10 @@ public class ThreeSum_15
 			while ( j < k )
 			{
 				int sum = nums[i] + nums[j] + nums[k];
+<<<<<<< HEAD
 				
+=======
+>>>>>>> 92b4f99a37690f59e5bc5d2fa42b104e3318f4bd
 				if ( sum == 0 )
 					set.add( Arrays.asList( nums[i], nums[j++], nums[k--] ) );
 				else if ( sum > 0 )

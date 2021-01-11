@@ -10,11 +10,20 @@ public class MergeIntervals
 	{
 		int[][] intervals =
 		{
+<<<<<<< HEAD
 				{ 1, 3 },
 				{ 2, 6 },
 				{ 8, 10 },
 				{ 15, 18 } };
 
+=======
+			{ 1, 3 },
+			{ 2, 6 },
+			{ 8, 10 },
+			{ 15, 18 }
+		};
+		
+>>>>>>> 92b4f99a37690f59e5bc5d2fa42b104e3318f4bd
 		merge( intervals );
 	}
 
@@ -27,7 +36,11 @@ public class MergeIntervals
 		LinkedList<int[]> merged = new LinkedList<>();
 		for ( int[] interval : intervals )
 		{
+<<<<<<< HEAD
 			if ( merged.isEmpty() || interval[0] > merged.getLast()[1] )
+=======
+			if ( merged.isEmpty() || merged.getLast()[1] < interval[0] )
+>>>>>>> 92b4f99a37690f59e5bc5d2fa42b104e3318f4bd
 				merged.add( interval );
 			else
 			{
