@@ -55,10 +55,6 @@ public class DecodedString_880
 				{
 					result.append( temp );
 				}
-<<<<<<< HEAD
-=======
-				;
->>>>>>> 92b4f99a37690f59e5bc5d2fa42b104e3318f4bd
 			}
 
 			if ( result.length() > K - 1 )
