@@ -11,20 +11,13 @@ public class SingleNumber_137
 		{ 0, 1, 0, 1, 0, 1, 99 } ) );
 	}
 
+	// XOR operation
 	public static int singleNumber( int[] nums )
 	{
-		Map<Integer, Integer> countMap = new HashMap<>();
-		for ( int num : nums )
-		{
-			countMap.put( num, countMap.getOrDefault( num, 0 ) + 1 );
-		}
-
-		for ( int key : countMap.keySet() )
-		{
-			if ( countMap.get( key ) == 1 )
-				return key;
-		}
-
-		return -1;
+		int uniqueNum = 0;
+		for (int num: nums)
+			uniqueNum = uniqueNum ^ num;
+		
+		return uniqueNum;
 	}
 }
